@@ -1,0 +1,259 @@
+/*задает основные стили для всей страницы*/
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+ /*задает расположение элементов в колонку*/
+  justify-content: space-between;
+ /*задает выравнивание элементов по вертикали с промежутками между ними*/
+  min-height: 100vh;
+ /*задает минимальную высоту body, равную 100% высоты видимой области экрана*/
+  background-color: black;
+  color: white;
+  font-family: 'Finger Paint', cursive;
+}
+/*задает стили для заголовка страницы*/
+header {
+  display: flex;
+  justify-content: center;
+ /*Выравнивание по центру главной оси*/
+  height: 5rem;
+ /* задаем высоту блока в ремах */
+  box-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 5;
+ /*Устанавливаем слой наложения*/
+}
+/* Стиль для не посещенных ссылок */
+a {
+  color: white;
+  text-decoration: none;
+ /*Убираем подчёркивание ссылок*/
+}
+/* Стиль для не посещенных ссылок внутри тега li*/
+li a:visited {
+  color: #a000a0;
+  text-decoration: none;
+ /*Убираем подчёркивание*/
+}
+/*Добавление свечения при наведении на ссылки внутри тега li*/
+li a:hover{
+  text-shadow: 0 0 2px #a000a0, 0 0 1px #a000a0, 0 0 30px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0;
+  text-decoration: none;
+  transition: 0.3s linear;
+ /* Время изменения */
+}
+/*Плавное пропадание свечения при наведении на ссылки внутри тега li*/
+li a:not(:hover){
+  text-shadow: 0 0 0px #a000a0;
+  transition: 0.3s linear;
+ /* Время изменения */
+}
+/*ul и li задают стили для списка элементов в навигационном меню*/
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+ /* Убрал маркер */
+}
+nav li {
+  margin: 0 20px;
+  font-size: 200%;
+}
+/* Задаем общие стили для блока */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+ /* Устанавливаем соотношение сторон блока для видео */
+  padding-bottom: 56.25%;
+ /* 16:9 aspect ratio */
+}
+/* Задаем стили для видео */
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+ /*Делаем размытие видео на фоне*/
+}
+/* Задаем стили для логотипа */
+.logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-width: 70%;
+ /* Добавляем адаптивный размер логотипа */
+}
+/* Задаем стили для верхней картинки-перехода */
+.top-image {
+  transform: scaleX(-1);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* Задаем стили для нижней картинки-перехода */
+.bottom-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block {
+  text-align: center;
+ /* Добавляем text-align: center;
+  для блока */
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+ /* Добавляем position: relative;
+  для блока */
+}
+.block img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+}
+
+.block p {
+  background-color: black;
+  text-shadow: 0 0 5px #ffffff, 0 0 1px #ffffff, 0 0 25px #ffffff, 0 0 1px #ffffff;
+  font-size: 1.5vw;
+  top: 60%;
+}
+/*задает стили для элементов при ширине экрана меньше или равной 768 пикселей. */
+legend {
+  text-align: center;
+ /* Добавляем text-align: center;
+  для блока */
+  background-color: black;
+  color: #5a6bdc;
+  text-shadow: 0 0 2px #5a6bdc, 0 0 1px #5a6bdc, 0 0 25px #5a6bdc;
+  font-size: 2.5vw;
+  top: 40%;
+}
+/*Убираю рамку вокруг формы заполнения*/
+fieldset {
+  border: none;
+}
+/*Стилизация формы отправки*/
+.form-container {
+  display: flex;
+  justify-content: center;
+ /* выравнивание элементов по горизонтали по центру */
+  align-items: center;
+ /* выравнивание элементов по вертикали по центру */
+  flex-direction: column;
+ /* установка направления элементов на вертикальное */
+  background-color: black;
+  color: white;
+}
+/*Стиль кнопки для отправки формы (ОТПРАВИТЬ) после ввода e-mail, имени и игровой платформы*/
+button[type="submit"] {
+  font-family: 'Finger Paint', cursive;
+  background-color: transparent;
+ /* Прозрачный фон кнопки */
+  color: white;
+ /* Цвет текста на кнопке */
+  border: 2px solid white;
+ /* Граница кнопки */
+  padding: 20px 40px;
+ /* Отступы внутри кнопки */
+  font-size: 1.5rem;
+ /* Размер шрифта на кнопке */
+  cursor: pointer;
+ /* Делаем курсор при наведении на кнопку в виде руки */
+  border-radius: 10px;
+ /* Задаем радиус скругления углов */
+  transition: all 0.3s ease-in-out;
+ /* Добавляем плавный переход при наведении на кнопку */
+}
+button[type="submit"]:hover {
+  text-shadow: 0 0 2px #a000a0, 0 0 1px #a000a0, 0 0 30px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #8df52c, 0 0 1px #8df52c;
+  border: 2px solid #a000a0;
+  color: #a000a0;
+ /* Цвет текста на кнопке при наведении */
+}
+/*Стиль вводимого текста*/
+.form-control {
+  font-family: 'Finger Paint', cursive;
+ /* Установка шрифта */
+  color: white;
+  background-color: black;
+}
+
+input[type="text"], input[type="email"], select {
+  width: 35%;
+  box-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+  color: white; /* Цвет текста в поле ввода */
+  border: none; /* Убираем границу */
+  font-size: 1.2rem; /* Размер шрифта в поле ввода */
+  margin-bottom: 30px; /* Отступ снизу */
+  outline: none; /* Убираем контур при нажатии на поле ввода */
+  border-radius: 8px; /* добавляем округление углов */
+}
+
+/* Подсветка по внешнему контуру */
+input[type="text"]:focus, input[type="email"]:focus{
+  background-color: rgb(90, 139, 220, 0.1);
+  box-shadow: 0 0 5px #5a6bdc, 0 0 5px #5a6bdc, 0 0 30px #5a6bdc, 0 0 5px #5a6bdc, 0 0 5px #5a6bdc, 0 0 5px #5a6bdc, 0 0 5px #5a6bdc;
+}
+
+label[for="platform"] {
+  font-size: 2rem; /* Размер шрифта для текста "Your gaming platform" */
+  color: #5a6bdc; /* Цвет текста для текста "Your gaming platform" */
+  margin-bottom: 10px;
+}
+/*Картинки для соц.сетей*/
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-links ul {
+  display: flex;
+}
+.social-links li {
+  display: flex;
+  justify-content: center;
+  margin-left: 0em;
+  list-style-type: none;
+ /* Убрал маркер */
+}
+.social-links img {
+  display: flex;
+  justify-content: center;
+  max-width: 60%;
+ /*Максимальная ширина изображения*/
+  height: auto;
+ /*Автоматическая высота для сохранения пропорций*/
+}
+/*Все права защищены и т.д. и т.п.*/
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,66 @@
+body {
+    margin-top: 3.5em; /* отступ в 3.5em */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; /*задает расположение элементов в колонку*/
+    justify-content: space-between; /*задает выравнивание элементов по вертикали с промежутками между ними*/
+    min-height: 100vh; /*задает минимальную высоту body, равную 100% высоты видимой области экрана*/
+    background-color: white;
+    color: white;
+    font-family: 'Finger Paint', cursive;
+  }
+
+/*задает стили для заголовка страницы*/
+header {
+    display: flex;
+    justify-content: center; /*Выравнивание по центру главной оси*/
+    height: 5rem; /* задаем высоту блока в ремах */
+    box-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 5; /*Устанавливаем слой наложения*/
+  }
+  /*задает стили для ссылки на главное меню*/
+  .guard-nav-logo {
+    position: absolute;
+    left: 0.75rem;
+    margin-top: 0.6em; /* задаем отступ сверху в em */
+  }
+  
+  /* Стиль для не посещенных ссылок */
+  a {
+    color: white;
+    text-decoration: none; /*Убираем подчёркивание ссылок*/
+  }
+  
+  /* Стиль для не посещенных ссылок внутри тега li*/
+  li a:visited {
+    color: #a000a0;
+    text-decoration: none; /*Убираем подчёркивание*/
+  }
+  
+  /*Добавление свечения при наведении на ссылки внутри тега li*/
+  li a:hover{
+    text-shadow: 0 0 2px #a000a0, 0 0 1px #a000a0, 0 0 30px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0;
+    text-decoration: none;
+    transition: 0.3s linear; /* Время изменения */
+   }
+  
+   
+  /*ul и li задают стили для списка элементов в навигационном меню*/
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none; /* Убрал маркер */
+  }
+  
+  nav li {
+    margin: 0 20px;
+    font-size: 200%;
+  }

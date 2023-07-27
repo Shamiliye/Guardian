@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Media</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="css/mediaStyles.css">
+  <script src="js/media_scripts.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"><img src="img/logo/Game_Start_Icon.png" alt="Main menu" width="60"></a>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="container">
+      <h2>Screenshots</h2>
+      <div class="images">
+        <div class="image-container">
+          <img src="media_content/screenshots/hero_on_mushrooms.PNG" class="image" alt="Screenshot1" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero.PNG" class="image" alt="Screenshot2" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero_on_mushrooms.PNG" class="image" alt="Screenshot3" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero.PNG" class="image" alt="Screenshot4" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero_on_mushrooms.PNG" class="image" alt="Screenshot5" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero.PNG" class="image" alt="Screenshot6" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero.PNG" class="image" alt="Screenshot7" onclick="openModal(this)">
+        </div>
+        <div class="image-container">
+          <img src="media_content/screenshots/hero_on_mushrooms.PNG" class="image" alt="Screenshot8" onclick="openModal(this)">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+      </div>
+
+      <h2>Video</h2>
+      <div class="videos">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/8jLNDHe18RU" allowfullscreen class="video"></iframe>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/8jLNDHe18RU" allowfullscreen class="video"></iframe>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/8jLNDHe18RU" allowfullscreen class="video"></iframe>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/8jLNDHe18RU" allowfullscreen class="video"></iframe>
+        </div>
+      </div>
+
+      <h2>Concept arts</h2>
+      <div class="concept-arts">
+        <div class="concept-art-container">
+          <img src="media_content\concept_arts\enemies.png" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="media_content\concept_arts\Hero_on_the_mountain.jpg" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="media_content\concept_arts\Mushrooms_on_the_rock.jpg" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="media_content\concept_arts\ruber.png" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="media_content\concept_arts\water_house.jpg" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+        <div class="concept-art-container">
+          <img src="media_content\concept_arts\enemies.png" alt="concept art" class="concept-art" onclick="openModal(this)">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sl-container">
+      <ul class="social-links">
+        <li>
+          <a href="https://vk.com/feed"><img src="img\soc_net\VK.png"></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/_guardian_of_the_light_?igshid=ZGUzMzM3NWJiOQ=="><img src="img\soc_net\Instagram.png"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/"><img src="img\soc_net\Facebook.png"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCdZpBRv5t5oM0qRQtOabxLQ"><img src="img\soc_net\YouTube.png"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/CrAzyCreAtor15?t=bApI6X_FtMao5f6EGB85TQ&s=09"><img src="img\soc_net\Twitter.png"></a>
+        </li>
+        <li>
+          <a href="https://web.telegram.org/"><img src="img\soc_net\Telegram.png"></a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Guardian. Все права защищены.</p>
+  </footer>
+</body>
+
+</html>
