@@ -208,6 +208,7 @@ button[type="submit"]:hover {
 input[type="text"], input[type="email"], select {
   width: 35%;
   box-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+  padding: 0.5rem;
   color: white; /* Цвет текста в поле ввода */
   border: none; /* Убираем границу */
   font-size: 1.2rem; /* Размер шрифта в поле ввода */
