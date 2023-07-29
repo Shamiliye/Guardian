@@ -24,4 +24,9 @@ async function sendForm(data) {
     } else {
         alert('Something went wrong');
     }
+
+    let a =1 
+    let b = 21
+    let c = a+b
+    console.log(c);
 }
