@@ -1,12 +1,13 @@
 var currentIndex = 0; //Текущий индекс отображаемого изображения
 var images = document.getElementsByClassName("image"); //Все эл-ты с классом image
-
+let conceptArts = document.getElementsByClassName("concept-art")
 //открытие модального окна
 function openModal(element) {
+ 
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImage");
   var captionText = document.getElementById("caption");
-  
+  console.log(element);
   modal.style.display = "block";
   modalImg.src = element.src;
   captionText.textContent = element.alt;
