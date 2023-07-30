@@ -32,28 +32,29 @@ header {
   z-index: 5;
  /*Устанавливаем слой наложения*/
 }
+
+h2 {
+  color: #3914AF;
+  font-size: 2.1rem;
+}
+
 /* Стиль для не посещенных ссылок */
 a {
   color: white;
   text-decoration: none;
  /*Убираем подчёркивание ссылок*/
 }
-/* Стиль для не посещенных ссылок внутри тега li*/
-li a:visited {
-  color: #a000a0;
-  text-decoration: none;
- /*Убираем подчёркивание*/
-}
+
 /*Добавление свечения при наведении на ссылки внутри тега li*/
 li a:hover{
-  text-shadow: 0 0 2px #a000a0, 0 0 1px #a000a0, 0 0 30px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0;
+  text-shadow: 0 0 5px #7109AA, 0 0 5px #7109AA, 0 0 30px #7109AA, 0 0 4px #7109AA, 0 0 2px #7109AA, 0 0 1px #7109AA, 0 0 1px #7109AA;
   text-decoration: none;
   transition: 0.3s linear;
  /* Время изменения */
 }
 /*Плавное пропадание свечения при наведении на ссылки внутри тега li*/
 li a:not(:hover){
-  text-shadow: 0 0 0px #a000a0;
+  text-shadow: 0 0 0px #7109AA;
   transition: 0.3s linear;
  /* Время изменения */
 }
@@ -140,7 +141,7 @@ nav li {
 
 .block p {
   background-color: black;
-  text-shadow: 0 0 5px #ffffff, 0 0 1px #ffffff, 0 0 25px #ffffff, 0 0 1px #ffffff;
+  text-shadow: 0 0 5px #FBFE72, 0 0 1px #FBFE72, 0 0 25px #FBFE72, 0 0 1px #FBFE72;
   font-size: 1.5vw;
   top: 60%;
 }
@@ -150,8 +151,8 @@ legend {
  /* Добавляем text-align: center;
   для блока */
   background-color: black;
-  color: #5a6bdc;
-  text-shadow: 0 0 2px #5a6bdc, 0 0 1px #5a6bdc, 0 0 25px #5a6bdc;
+  color: #3914AF;
+  text-shadow: 0 0 2px #3914AF, 0 0 1px #3914AF, 0 0 25px #3914AF;
   font-size: 2.5vw;
   top: 40%;
 }
@@ -192,9 +193,9 @@ button[type="submit"] {
  /* Добавляем плавный переход при наведении на кнопку */
 }
 button[type="submit"]:hover {
-  text-shadow: 0 0 2px #a000a0, 0 0 1px #a000a0, 0 0 30px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #8df52c, 0 0 1px #8df52c;
-  border: 2px solid #a000a0;
-  color: #a000a0;
+  text-shadow: 0 0 2px #7109AA, 0 0 1px #7109AA, 0 0 30px #7109AA, 0 0 1px #7109AA, 0 0 1px #7109AA, 0 0 1px #8df52c, 0 0 1px #8df52c;
+  border: 2px solid #7109AA;
+  color: #7109AA;
  /* Цвет текста на кнопке при наведении */
 }
 /*Стиль вводимого текста*/
@@ -220,12 +221,12 @@ input[type="text"], input[type="email"], select {
 /* Подсветка по внешнему контуру */
 input[type="text"]:focus, input[type="email"]:focus{
   background-color: rgb(90, 139, 220, 0.1);
-  box-shadow: 0 0 5px #5a6bdc, 0 0 5px #5a6bdc, 0 0 30px #5a6bdc, 0 0 5px #5a6bdc, 0 0 5px #5a6bdc, 0 0 5px #5a6bdc, 0 0 5px #5a6bdc;
+  box-shadow: 0 0 5px #3914AF, 0 0 5px #3914AF, 0 0 30px #3914AF, 0 0 5px #3914AF, 0 0 5px #3914AF, 0 0 5px #3914AF, 0 0 5px #3914AF;
 }
 
 label[for="platform"] {
   font-size: 2rem; /* Размер шрифта для текста "Your gaming platform" */
-  color: #5a6bdc; /* Цвет текста для текста "Your gaming platform" */
+  color: #3914AF; /* Цвет текста для текста "Your gaming platform" */
   margin-bottom: 10px;
 }
 /*Картинки для соц.сетей*/

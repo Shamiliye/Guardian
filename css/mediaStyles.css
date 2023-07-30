@@ -46,12 +46,7 @@ a {
   text-decoration: none;
  /*Убираем подчёркивание ссылок*/
 }
-/* Стиль для не посещенных ссылок внутри тега li*/
-nav li a:visited {
-  color: #a000a0;
-  text-decoration: none;
- /*Убираем подчёркивание*/
-}
+
 /*Добавление свечения при наведении на ссылки внутри тега li*/
 nav li a:hover{
   text-shadow: 0 0 2px #a000a0, 0 0 1px #a000a0, 0 0 30px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0, 0 0 1px #a000a0;
