@@ -1,41 +1,31 @@
 /*задает основные стили для всей страницы*/
 body {
-  
-  font-size: 16px;
   display: flex;
-  flex-direction: column;
- /*задает расположение элементов в колонку*/
-  justify-content: space-between;
- /*задает выравнивание элементов по вертикали с промежутками между ними*/
-  min-height: 100vh;
- /*задает минимальную высоту body, равную 100% высоты видимой области экрана*/
+  font-size: 1rem;
+  flex-direction: column; /*задает расположение элементов в колонку*/
+  justify-content: space-between; /*задает выравнивание элементов по вертикали с промежутками между ними*/
+  min-height: 100vh; /*задает минимальную высоту body, равную 100% высоты видимой области экрана*/
   background-color: black;
   color: white;
   font-family: 'Finger Paint', cursive;
 }
 /*задает стили для заголовка страницы*/
 header {
+  font-size: 0.9em;
   display: flex;
-  justify-content: center;
- /*Выравнивание по центру главной оси*/
-  height: 5rem;
- /* задаем высоту блока в ремах */
+  justify-content: center; /*Выравнивание по центру главной оси*/
+  height: 2.5em; /* задаем высоту блока в ремах */
   box-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
   background-color: black;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   max-width: 100%;
-  max-height: 100%;
-  z-index: 5;
- /*Устанавливаем слой наложения*/
+  z-index: 5; /*слой наложения*/
 }
 
 h2 {
   color: #3914AF;
-  font-size: 2.1rem;
+  font-size: 1,5em;
 }
 
 /* Стиль для не посещенных ссылок */
