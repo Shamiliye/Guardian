@@ -1,31 +1,27 @@
 body {
-    margin-top: 3.5em; /* отступ в 3.5em */
-    font-size: 16px;
-    display: flex;
-    flex-direction: column; /*задает расположение элементов в колонку*/
-    justify-content: space-between; /*задает выравнивание элементов по вертикали с промежутками между ними*/
-    min-height: 100vh; /*задает минимальную высоту body, равную 100% высоты видимой области экрана*/
-    background-color: white;
-    color: white;
-    font-family: 'Finger Paint', cursive;
-  }
+  display: flex;
+  font-size: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Finger Paint', cursive;
+}
 
-/*задает стили для заголовка страницы*/
 header {
-    display: flex;
-    justify-content: center; /*Выравнивание по центру главной оси*/
-    height: 5rem; /* задаем высоту блока в ремах */
-    box-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 5; /*Устанавливаем слой наложения*/
-  }
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+  box-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
+  background-color: black;
+  position: fixed;
+  inset: 0;
+  max-width: 100%;
+  z-index: 3;
+
+}
   /*задает стили для ссылки на главное меню*/
   .guard-nav-logo {
     position: absolute;

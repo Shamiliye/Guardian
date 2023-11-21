@@ -13,33 +13,27 @@ body {
   color: white;
   font-family: 'Finger Paint', cursive;
 }
-/*задает стили для заголовка страницы*/
+
 header {
+  font-size: 1.2em;
   display: flex;
   justify-content: center;
- /*Выравнивание по центру главной оси*/
-  height: 5rem;
- /* задаем высоту блока в ремах */
+  height: 2.5em;
   box-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
   background-color: black;
   position: fixed;
- /*Фиксируем на экране*/
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   max-width: 100%;
-  max-height: 100%;
-  z-index: 5;
- /*Устанавливаем слой наложения*/
+  z-index: 3;
 }
+
 /*задает стили для ссылки на главное меню*/
 .guard-nav-logo {
   position: absolute;
   left: 0.75rem;
   margin-top: 0.6em;
- /* задаем отступ сверху в em */
 }
+
 /* Стиль для не посещенных ссылок */
 a {
   color: white;
@@ -214,11 +208,12 @@ label[for="platform"] {
  /* Цвет текста для текста "Your gaming platform" */
   margin-bottom: 10px;
 }
-/*Картинки для соц.сетей*/
+
+
 .social-links {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 3em;
 }
 .social-links ul {
   display: flex;
@@ -226,23 +221,17 @@ label[for="platform"] {
 .social-links li {
   display: flex;
   justify-content: center;
-  margin-left: 0em;
   list-style-type: none;
- /* Убрал маркер */
 }
 .social-links img {
   display: flex;
   justify-content: center;
-  max-width: 60%;
- /*Максимальная ширина изображения*/
-  height: auto;
- /*Автоматическая высота для сохранения пропорций*/
+  max-width: 100%;
 }
-/*Все права защищены и т.д. и т.п.*/
+
 footer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   color: white;
   text-align: center;
 }
