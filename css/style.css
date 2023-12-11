@@ -1,6 +1,6 @@
 body {
   display: flex;
-  font-size: 1em;
+  font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  font-size: 1.2em;
+  font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);;
   display: flex;
   justify-content: center;
   height: 2.5em;
@@ -111,8 +111,7 @@ nav li {
 }
 .block {
   text-align: center;
- /* Добавляем text-align: center;
-  для блока */
+
   width: 100%;
   margin-bottom: 20px;
   display: flex;
